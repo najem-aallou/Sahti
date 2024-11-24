@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sahti"
         tools:targetApi="31">
+
         <activity
             android:name=".login"
             android:exported="false" />
@@ -36,3 +37,5 @@
     </application>
 
 </manifest>
+
+
