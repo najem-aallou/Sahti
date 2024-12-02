@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sahti"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Inscrire_patient"
+            android:exported="false" />
+        <activity
+            android:name=".Inscrire_type"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
@@ -36,9 +46,4 @@
         </activity>
     </application>
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-
 </manifest>
-
-

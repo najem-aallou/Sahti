@@ -1,9 +1,10 @@
 package com.example.sahti
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -13,6 +14,7 @@ class login : AppCompatActivity() {
     // Instance de FirebaseAuth
     private lateinit var auth: FirebaseAuth
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -23,7 +25,19 @@ class login : AppCompatActivity() {
         // Références aux champs et boutons
         val emailEditText = findViewById<EditText>(R.id.editTextTextEmailAddress)
         val passwordEditText = findViewById<EditText>(R.id.editTextTextPassword)
-        val loginButton = findViewById<Button>(R.id.btnLogin)
+        val loginButton = findViewById<TextView>(R.id.btn_log)
+
+        val bt_back2 = findViewById<TextView>(R.id.bt_back2)
+        bt_back2.setOnClickListener {
+            val intent = Intent(this, Page4::class.java)
+            startActivity(intent)
+        }
+
+        val bt_inscrire1 = findViewById<TextView>(R.id.bt_inscrire1)
+        bt_inscrire1.setOnClickListener {
+            val intent = Intent(this, Inscrire_type::class.java)
+            startActivity(intent)
+        }
 
         // Action du bouton Login
         loginButton.setOnClickListener {
@@ -43,7 +57,7 @@ class login : AppCompatActivity() {
                         // Connexion réussie
                         Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show()
                         // Rediriger vers une autre activité (exemple : HomeActivity)
-                        val intent = Intent(this, HomeActivity::class.java)
+                        val intent = Intent(this@login, Home::class.java)
                         startActivity(intent)
                         finish()
                     } else {
