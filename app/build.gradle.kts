@@ -8,6 +8,10 @@ android {
     namespace = "com.example.sahti"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.sahti"
         minSdk = 23
@@ -37,6 +41,9 @@ android {
 }
 
 dependencies {
+
+    implementation ("com.google.firebase:firebase-database:20.3.1")
+
 
     implementation ("com.google.firebase:firebase-auth:21.0.0")
 
