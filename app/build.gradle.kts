@@ -78,4 +78,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.androidx.navigation.compose)
+
+    implementation("com.google.android.material:material:1.9.0")
 }

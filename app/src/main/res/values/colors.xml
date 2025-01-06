@@ -13,4 +13,19 @@
     <color name="purple_3">#CFC6FF</color>
     <color name="gray">#CECECE</color>
     <color name="gray_1">#F1EFEF</color>
+    <color name="purple_4">#C1A8E4</color>
+
+    <color name="dental_color">#2C0E61</color>      <!-- Violet pour dentaire -->
+    <color name="eye_color">#3F943F</color>         <!-- Vert pour ophtalmologie -->
+    <color name="heart_color">#CD2158</color>       <!-- Rouge pour cardiologie -->
+    <color name="lung_color">#8B4513</color>        <!-- Marron pour pneumologie -->
+    <color name="ear_color">#1E4C9A</color>         <!-- Bleu foncé pour ORL -->
+    <color name="ortho_color">#BA9839</color>       <!-- Orange pour orthopédie -->
+    <color name="neuro_color">#545A0B</color>       <!-- Violet foncé pour neurologie -->
+    <color name="pediatric_color">#BA1626</color>   <!-- Bleu clair pour pédiatrie -->
+    <color name="dermato_color">#B95115</color>     <!-- Orange foncé pour dermatologie -->
+    <color name="nephorologie_color">#241355</color>
+    <color name="generale_color">#8174A0</color>
+    <color name="nutritionniste_color">#57134E</color>
+
 </resources>

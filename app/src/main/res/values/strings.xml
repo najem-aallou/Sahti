@@ -67,5 +67,6 @@ Votre Sant\u00c3\u00a9, Notre Priorit\u00c3\u00a9  Connectez-vous\nen Temps R\u0
 
     <string name="web_client_id">605809245485-pedev6k0iqhlemjp8if6v40sovnm6nh8.apps.googleusercontent.com</string>
 
+    <string name="prompt_specialites">Choisissez vos spécialités</string>
 
 </resources>

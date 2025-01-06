@@ -8,19 +8,25 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.DatabaseReference
+
 
 class login : AppCompatActivity() {
 
     // Instance de FirebaseAuth
     private lateinit var auth: FirebaseAuth
+    private lateinit var database: DatabaseReference
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // Initialisation de FirebaseAuth
+        // Initialisation de FirebaseAuth et Database
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance().reference
 
         // Références aux champs et boutons
         val emailEditText = findViewById<EditText>(R.id.editTextTextEmailAddress)
@@ -54,12 +60,22 @@ class login : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        // Connexion réussie
-                        Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show()
-                        // Rediriger vers une autre activité (exemple : HomeActivity)
-                        val intent = Intent(this@login, Home::class.java)
-                        startActivity(intent)
-                        finish()
+                        val userId = auth.currentUser?.uid
+                        if (userId != null) {
+                            database.child("patient").child(userId).get()
+                                .addOnSuccessListener { snapshot ->
+                                    val nomPrenom = snapshot.child("nomPrenom").value?.toString() ?: "Utilisateur"
+                                    val intent = Intent(this@login, specialite::class.java)
+                                    intent.putExtra("USER_NAME", nomPrenom)
+                                    startActivity(intent)
+                                    finish()
+                                }
+                                .addOnFailureListener {
+                                    val intent = Intent(this@login, specialite::class.java)
+                                    startActivity(intent)
+                                    finish()
+                                }
+                        }
                     } else {
                         // Échec de connexion
                         Toast.makeText(
