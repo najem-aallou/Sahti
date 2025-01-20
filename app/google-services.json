@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862322266906",
+    "project_id": "sahti-501b2",
+    "storage_bucket": "sahti-501b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862322266906:android:0727182a9a5bf44d13d2a3",
+        "android_client_info": {
+          "package_name": "com.example.sahti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCabFsQ2TKzuD0GRLTNt6Hy0DjgvGdCr8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

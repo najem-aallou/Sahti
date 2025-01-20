@@ -14,6 +14,10 @@
     <color name="gray">#CECECE</color>
     <color name="gray_1">#F1EFEF</color>
     <color name="purple_4">#C1A8E4</color>
+    <color name="purple_5">#761F95</color>
+    <color name="purple_6">#6750A4</color>
+    <color name="bleu_1">#F5EFFF</color>
+
 
     <color name="dental_color">#2C0E61</color>      <!-- Violet pour dentaire -->
     <color name="eye_color">#3F943F</color>         <!-- Vert pour ophtalmologie -->

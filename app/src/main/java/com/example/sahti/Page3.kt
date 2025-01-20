@@ -23,7 +23,7 @@ class Page3 : AppCompatActivity() {
 
         val bt2 = findViewById<TextView>(R.id.bt2)
         bt2.setOnClickListener {
-            val intent = Intent(this, Page4::class.java)
+            val intent = Intent(this, login::class.java)
             startActivity(intent)
         }
 

@@ -55,6 +55,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Profil"
+            android:exported="false" />
+        <activity
+            android:name=".ModifierProfil"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorHome"
+            android:exported="false"/>
+        <activity
+            android:name=".DoctorsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DoctorDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".DoctorsActivity" />
+        <activity
+            android:name=".AppointmentConfirmationActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".PatientAppointmentsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DoctorProfile"
+            android:exported="false"/>
+        <activity
+            android:name=".ModifierDoctorProfile"
+            android:exported="false"/>
+        <activity
+            android:name=".DoctorAppointmentsActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

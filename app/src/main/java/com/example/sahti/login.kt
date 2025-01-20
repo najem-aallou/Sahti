@@ -33,11 +33,7 @@ class login : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.editTextTextPassword)
         val loginButton = findViewById<TextView>(R.id.btn_log)
 
-        val bt_back2 = findViewById<TextView>(R.id.bt_back2)
-        bt_back2.setOnClickListener {
-            val intent = Intent(this, Page4::class.java)
-            startActivity(intent)
-        }
+
 
         val bt_inscrire1 = findViewById<TextView>(R.id.bt_inscrire1)
         bt_inscrire1.setOnClickListener {
@@ -57,34 +53,61 @@ class login : AppCompatActivity() {
             }
 
             // Connexion avec Firebase
-            auth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val userId = auth.currentUser?.uid
-                        if (userId != null) {
-                            database.child("patient").child(userId).get()
-                                .addOnSuccessListener { snapshot ->
-                                    val nomPrenom = snapshot.child("nomPrenom").value?.toString() ?: "Utilisateur"
-                                    val intent = Intent(this@login, specialite::class.java)
-                                    intent.putExtra("USER_NAME", nomPrenom)
-                                    startActivity(intent)
-                                    finish()
-                                }
-                                .addOnFailureListener {
-                                    val intent = Intent(this@login, specialite::class.java)
-                                    startActivity(intent)
-                                    finish()
-                                }
-                        }
-                    } else {
-                        // Échec de connexion
-                        Toast.makeText(
-                            this,
-                            "Erreur : ${task.exception?.message}",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
+            signIn(email, password)
+        }
+
+        val forgotPasswordText = findViewById<TextView>(R.id.forgotPasswordText)
+        forgotPasswordText.setOnClickListener {
+            val email = emailEditText.text.toString().trim()
+            if (email.isEmpty()) {
+                Toast.makeText(this, "Veuillez entrer votre email", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            auth.sendPasswordResetEmail(email)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Email de réinitialisation envoyé", Toast.LENGTH_SHORT).show()
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(this, "Erreur: ${e.message}", Toast.LENGTH_SHORT).show()
                 }
         }
+    }
+
+    private fun signIn(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val userId = auth.currentUser?.uid
+                    if (userId != null) {
+                        // Vérifier d'abord dans la collection doctors
+                        database.child("doctors").child(userId).get()
+                            .addOnSuccessListener { doctorSnapshot ->
+                                if (doctorSnapshot.exists()) {
+                                    // C'est un docteur
+                                    val intent = Intent(this@login, DoctorHome::class.java)
+                                    intent.putExtra("DOCTOR_ID", userId)
+                                    startActivity(intent)
+                                    finish()
+                                } else {
+                                    // Vérifier dans la collection patients
+                                    database.child("patient").child(userId).get()
+                                        .addOnSuccessListener { patientSnapshot ->
+                                            if (patientSnapshot.exists()) {
+                                                // C'est un patient
+                                                val nomPrenom = patientSnapshot.child("nomPrenom").value?.toString() ?: "Utilisateur"
+                                                val intent = Intent(this@login, specialite::class.java)
+                                                intent.putExtra("USER_NAME", nomPrenom)
+                                                startActivity(intent)
+                                                finish()
+                                            }
+                                        }
+                                }
+                            }
+                    }
+                } else {
+                    Toast.makeText(this, "Échec de la connexion", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }

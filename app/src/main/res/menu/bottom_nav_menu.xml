@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Accueil"/>
+    
+    <item
+        android:id="@+id/nav_appointments"
+        android:icon="@drawable/ic_calendar"
+        android:title="Rendez-vous"/>
+    
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profil"/>
+    
+    <!-- Vous pouvez ajouter d'autres items ici si nécessaire -->
+</menu>

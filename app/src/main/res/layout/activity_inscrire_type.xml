@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/page4"
-    tools:context=".Page4">
+    android:background="@drawable/inscrire1"
+    tools:context=".Inscrire_type">
 
     <TextView
-        android:id="@+id/bt_back1"
+        android:id="@+id/bt_back3"
         android:layout_width="92dp"
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,26 +20,28 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/bt3"
-        android:layout_width="228dp"
-        android:layout_height="55dp"
+        android:id="@+id/bt_inscrire_patient"
+        android:layout_width="305dp"
+        android:layout_height="128dp"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
+        app:layout_constraintVertical_bias="0.656" />
 
     <TextView
-        android:id="@+id/bt_sauter1"
-        android:layout_width="104dp"
-        android:layout_height="59dp"
+        android:id="@+id/bt_inscrire_doctor"
+        android:layout_width="302dp"
+        android:layout_height="137dp"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintVertical_bias="0.377" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
