@@ -58,7 +58,7 @@ Elle permet :
 
 ### 🔐 Connexion & Inscription
 <p align="center">
-  <img src="screenshots/pic2.jpg" width="650"/>
+  <img src="screenshots/pic2.jpg" width="750"/>
 </p>
 
 ---
