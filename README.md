@@ -81,9 +81,9 @@ Elle permet :
 
 ### 🩺 Interface Médecin
 <p align="center">
-  <img src="screenshots/pic8.jpg" width="550"/>
-  <img src="screenshots/pic9.jpg" width="550"/>
-  <img src="screenshots/pic10.jpg" width="550"/>
+  <img src="screenshots/pic8.jpg" width="500"/>
+  <img src="screenshots/pic9.jpg" width="750"/>
+  <img src="screenshots/pic10.jpg" width="750"/>
 </p>
 
 ---
