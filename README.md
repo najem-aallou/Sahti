@@ -72,8 +72,8 @@ Elle permet :
 
 ### 👤 Interface Patient
 <p align="center">
-  <img src="screenshots/pic4.jpg" width="650"/>
-  <img src="screenshots/pic5.jpg" width="650"/>
+  <img src="screenshots/pic4.jpg" width="600"/>
+  <img src="screenshots/pic5.jpg" width="600"/>
   <img src="screenshots/pic7.jpg" width="750"/>
 </p>
 
