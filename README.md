@@ -42,7 +42,9 @@ Sahti a été développée dans un cadre académique en utilisant des **technolo
 ## 📸 Captures d’écran
 
 ### 🟢 Écrans d’accueil
-![Interfaces de réception](screenshots/pic1.jpg)
+<p align="center">
+  <img src="screenshots/pic1.jpg" width="250"/>
+</p>
 
 ---
 
