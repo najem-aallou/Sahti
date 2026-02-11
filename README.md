@@ -1,151 +1,149 @@
-# 🏥 Sahti – Application de gestion des rendez-vous médicaux
+# 🏥 Sahti  
+### 📅 Application mobile de gestion des rendez-vous médicaux
 
-Sahti est une application mobile Android conçue pour faciliter la **prise, la gestion et le suivi des rendez-vous médicaux** entre patients et médecins.  
-Elle vise à améliorer l’accès aux soins, optimiser le temps des utilisateurs et garantir la sécurité des données médicales.
+<p align="center">
+  <img src="screenshots/pic1.jpg" width="250"/>
+</p>
 
----
-
-## 📱 Présentation de l’application
-
-L’application permet :
-- aux **patients** de rechercher un médecin, consulter ses informations et prendre des rendez-vous en ligne,
-- aux **médecins** de gérer leurs rendez-vous, accepter ou refuser des demandes et organiser leurs consultations.
-
-Sahti a été développée dans un cadre académique en utilisant des **technologies modernes** avec une attention particulière portée à :
-- l’ergonomie,
-- la simplicité d’utilisation,
-- la sécurité des données.
+<p align="center">
+  <b>Faciliter la prise de rendez-vous médicaux entre patients et médecins</b><br>
+  Simple • Rapide • Sécurisée
+</p>
 
 ---
 
-## ✨ Fonctionnalités principales
+## 🚀 À propos du projet
 
-### 👤 Patient
-- Création de compte et authentification sécurisée
-- Recherche de médecins par nom, spécialité ou adresse
-- Prise de rendez-vous (date et heure)
-- Suivi de l’état des rendez-vous (validé, en attente, refusé)
-- Gestion du profil personnel
-- Réinitialisation du mot de passe
+**Sahti** est une application mobile Android développée pour digitaliser et simplifier  
+la gestion des rendez-vous médicaux.
 
-### 🩺 Médecin
-- Inscription et authentification
-- Consultation des demandes de rendez-vous
-- Acceptation ou refus des rendez-vous
-- Visualisation des rendez-vous validés par date
-- Gestion du profil professionnel
+Elle permet :
+
+👤 Aux **patients** de rechercher un médecin et réserver un créneau  
+🩺 Aux **médecins** de gérer efficacement leurs consultations  
+
+🎯 Objectif : améliorer l’accès aux soins tout en garantissant la sécurité des données.
 
 ---
+
+## ✨ Fonctionnalités
+
+### 👤 Espace Patient
+- 🔐 Création de compte & authentification sécurisée
+- 🔎 Recherche de médecins (nom, spécialité, adresse)
+- 📅 Prise de rendez-vous
+- 📊 Suivi du statut (en attente, validé, refusé)
+- 👤 Gestion du profil
+- 🔑 Réinitialisation du mot de passe
+
+---
+
+### 🩺 Espace Médecin
+- 🔐 Inscription & connexion sécurisée
+- 📥 Consultation des demandes
+- ✅ Acceptation / ❌ Refus des rendez-vous
+- 📆 Visualisation par date
+- 🧾 Gestion du profil professionnel
 
 ---
 
 ## 📸 Captures d’écran
 
-### 🟢 Écrans d’accueil
-![Interfaces de réception](screenshots/pic1.jpg)
-
----
-
-### 🔐 Connexion & Création de compte
-![Connexion et inscription](screenshots/pic2.jpg)
-
----
-
-### 🔑 Mot de passe oublié
-![Mot de passe oublié](screenshots/pic3.jpg)
-
----
-
-### 👤 Inscription & Authentification Patient
-![Inscription patient](screenshots/pic4.jpg)
-
----
-
-### 🔎 Consultation des médecins
-![Consultation médecins](screenshots/pic5.jpg)
-
----
-
-### 📅 Prise de rendez-vous (Patient)
-![Prise rendez-vous patient](screenshots/Pic6.jpg)
-
----
-
-### 🧾 Profil Patient
-![Profil patient](screenshots/pic7.jpg)
-
----
-
-### 🩺 Inscription & Authentification Médecin
-
+### 🟢 Accueil
 <p align="center">
-  <img src="screenshots/pic8.jpg" width="550"/>
+  <img src="screenshots/pic1.jpg" width="250"/>
 </p>
 
 ---
 
-### 📋 Gestion des rendez-vous (Médecin)
-![Rendez-vous médecin](screenshots/pic9.jpg)
+### 🔐 Connexion & Inscription
+<p align="center">
+  <img src="screenshots/pic2.jpg" width="250"/>
+</p>
 
 ---
 
-### 👨‍⚕️ Profil Médecin
-![Profil médecin](screenshots/pic10.jpg)
+### 🔑 Mot de passe oublié
+<p align="center">
+  <img src="screenshots/pic3.jpg" width="250"/>
+</p>
 
 ---
 
+### 👤 Interface Patient
+<p align="center">
+  <img src="screenshots/pic4.jpg" width="250"/>
+  <img src="screenshots/pic5.jpg" width="250"/>
+  <img src="screenshots/pic7.jpg" width="250"/>
+</p>
+
+---
+
+### 🩺 Interface Médecin
+<p align="center">
+  <img src="screenshots/pic8.jpg" width="250"/>
+  <img src="screenshots/pic9.jpg" width="250"/>
+  <img src="screenshots/pic10.jpg" width="250"/>
+</p>
+
+---
 
 ## 🎥 Démonstration vidéo
 
-📺 Présentation complète de l’application sur YouTube :  
-👉 **Lien YouTube** : https://youtu.be/XxCPERwC-eM?si=l-PECjS6PnCFE9D7
+<p align="center">
+🎬 <b>Présentation complète sur YouTube</b><br><br>
+👉 https://youtu.be/XxCPERwC-eM?si=l-PECjS6PnCFE9D7
+</p>
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠️ Stack Technique
 
-- **Langage** : Kotlin  
-- **IDE** : Android Studio  
-- **Base de données & Backend** : Firebase  
-  - Authentication  
-  - Realtime Database / Firestore  
-- **Design UI/UX** : Figma  
-- **Modélisation UML** : Cacoo  
-- **Gestion de version** : Git & GitHub  
+| Technologie | Description |
+|-------------|--------------|
+| **Kotlin** | Développement Android |
+| **Android Studio** | IDE principal |
+| **Firebase Authentication** | Gestion sécurisée des comptes |
+| **Firebase Firestore / Realtime DB** | Base de données |
+| **Figma** | UI/UX Design |
+| **Cacoo** | Modélisation UML |
+| **Git & GitHub** | Versioning |
 
 ---
 
 ## 🔐 Sécurité
 
-- Authentification sécurisée via Firebase
+- Authentification via Firebase
 - Protection des données utilisateurs
-- Validation par mot de passe pour les opérations sensibles
-- Réinitialisation sécurisée du mot de passe par e-mail
+- Validation des opérations sensibles
+- Réinitialisation sécurisée par email
 
 ---
 
-## 🎓 Contexte académique
+## 🎓 Contexte Académique
 
-Ce projet a été réalisé dans le cadre du **module Programmation Mobile**  
-🎓 **Master : Systèmes de Télécommunications et Réseaux Informatiques**  
-🏫 Université Sultan Moulay Slimane – Faculté Polydisciplinaire de Beni Mellal  
-📆 Année universitaire : 2024/2025  
+Projet réalisé dans le cadre du module :
 
-### 👨‍💻 Réalisé par :
+📘 **Programmation Mobile**  
+🎓 Master : *Systèmes de Télécommunications et Réseaux Informatiques*  
+🏫 Université Sultan Moulay Slimane – FPBM  
+📆 2024/2025  
+
+### 👨‍💻 Équipe
 - Wissal LakhrouTi  
 - Meryem Oubou  
 - **Najem Aallou**
 
-
 ---
 
-## 🚀 Perspectives d’amélioration
+## 🚀 Améliorations futures
 
-- Notifications et rappels automatiques
-- Historique médical du patient
-- Déploiement sur d’autres plateformes (iOS)
+- 🔔 Notifications & rappels automatiques
+- 🏥 Historique médical du patient
+- 🍎 Version iOS
+- 🌍 Déploiement production
 
 ---
 
 ## 📄 Licence
-Projet académique – usage pédagogique.
+Projet académique – Usage pédagogique uniquement.
