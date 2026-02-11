@@ -58,23 +58,23 @@ Elle permet :
 
 ### 🔐 Connexion & Inscription
 <p align="center">
-  <img src="screenshots/pic2.jpg" width="550"/>
+  <img src="screenshots/pic2.jpg" width="650"/>
 </p>
 
 ---
 
 ### 🔑 Mot de passe oublié
 <p align="center">
-  <img src="screenshots/pic3.jpg" width="550"/>
+  <img src="screenshots/pic3.jpg" width="650"/>
 </p>
 
 ---
 
 ### 👤 Interface Patient
 <p align="center">
-  <img src="screenshots/pic4.jpg" width="550"/>
-  <img src="screenshots/pic5.jpg" width="550"/>
-  <img src="screenshots/pic7.jpg" width="550"/>
+  <img src="screenshots/pic4.jpg" width="650"/>
+  <img src="screenshots/pic5.jpg" width="650"/>
+  <img src="screenshots/pic7.jpg" width="650"/>
 </p>
 
 ---
