@@ -2,7 +2,7 @@
 ### 📅 Application mobile de gestion des rendez-vous médicaux
 
 <p align="center">
-  <img src="screenshots/pic1.jpg" width="450"/>
+  <img src="screenshots/pic1.jpg" width="550"/>
 </p>
 
 <p align="center">
@@ -51,39 +51,39 @@ Elle permet :
 
 ### 🟢 Accueil
 <p align="center">
-  <img src="screenshots/pic1.jpg" width="450"/>
+  <img src="screenshots/pic1.jpg" width="550"/>
 </p>
 
 ---
 
 ### 🔐 Connexion & Inscription
 <p align="center">
-  <img src="screenshots/pic2.jpg" width="450"/>
+  <img src="screenshots/pic2.jpg" width="550"/>
 </p>
 
 ---
 
 ### 🔑 Mot de passe oublié
 <p align="center">
-  <img src="screenshots/pic3.jpg" width="250"/>
+  <img src="screenshots/pic3.jpg" width="550"/>
 </p>
 
 ---
 
 ### 👤 Interface Patient
 <p align="center">
-  <img src="screenshots/pic4.jpg" width="450"/>
-  <img src="screenshots/pic5.jpg" width="450"/>
-  <img src="screenshots/pic7.jpg" width="450"/>
+  <img src="screenshots/pic4.jpg" width="550"/>
+  <img src="screenshots/pic5.jpg" width="550"/>
+  <img src="screenshots/pic7.jpg" width="550"/>
 </p>
 
 ---
 
 ### 🩺 Interface Médecin
 <p align="center">
-  <img src="screenshots/pic8.jpg" width="450"/>
-  <img src="screenshots/pic9.jpg" width="450"/>
-  <img src="screenshots/pic10.jpg" width="450"/>
+  <img src="screenshots/pic8.jpg" width="550"/>
+  <img src="screenshots/pic9.jpg" width="550"/>
+  <img src="screenshots/pic10.jpg" width="550"/>
 </p>
 
 ---
