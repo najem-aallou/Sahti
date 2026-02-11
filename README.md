@@ -37,22 +37,60 @@ Sahti a été développée dans un cadre académique en utilisant des **technolo
 
 ---
 
-## 🖼️ Captures d’écran
+---
 
-### 🔹 Écrans d’accueil
-![Accueil](screenshots/accueil.png)
+## 📸 Captures d’écran
 
-### 🔹 Authentification & inscription
-![Connexion](screenshots/connexion.png)
-![Inscription](screenshots/inscription.png)
-
-### 🔹 Espace patient
-![Patient](screenshots/patient.png)
-
-### 🔹 Espace médecin
-![Medecin](screenshots/medecin.png)
+### 🟢 Écrans d’accueil
+![Interfaces de réception](screenshots/pic1.jpg)
 
 ---
+
+### 🔐 Connexion & Création de compte
+![Connexion et inscription](screenshots/pic2.jpg)
+
+---
+
+### 🔑 Mot de passe oublié
+![Mot de passe oublié](screenshots/pic3.jpg)
+
+---
+
+### 👤 Inscription & Authentification Patient
+![Inscription patient](screenshots/pic4.jpg)
+
+---
+
+### 🔎 Consultation des médecins
+![Consultation médecins](screenshots/pic5.jpg)
+
+---
+
+### 📅 Prise de rendez-vous (Patient)
+![Prise rendez-vous patient](screenshots/Pic6.jpg)
+
+---
+
+### 🧾 Profil Patient
+![Profil patient](screenshots/pic7.jpg)
+
+---
+
+### 🩺 Inscription & Authentification Médecin
+![Inscription médecin](screenshots/pic8.jpg)
+
+---
+
+### 📋 Gestion des rendez-vous (Médecin)
+![Rendez-vous médecin](screenshots/pic9.jpg)
+
+---
+
+### 👨‍⚕️ Profil Médecin
+![Profil médecin](screenshots/pic10.jpg)
+
+---
+
 
 ## 🎥 Démonstration vidéo
 
