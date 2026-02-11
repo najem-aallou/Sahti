@@ -42,9 +42,7 @@ Sahti a été développée dans un cadre académique en utilisant des **technolo
 ## 📸 Captures d’écran
 
 ### 🟢 Écrans d’accueil
-<p align="center">
-  <img src="screenshots/pic1.jpg" width="250"/>
-</p>
+![Interfaces de réception](screenshots/pic1.jpg)
 
 ---
 
@@ -79,7 +77,10 @@ Sahti a été développée dans un cadre académique en utilisant des **technolo
 ---
 
 ### 🩺 Inscription & Authentification Médecin
-![Inscription médecin](screenshots/pic8.jpg)
+
+<p align="center">
+  <img src="screenshots/pic8.jpg" width="550"/>
+</p>
 
 ---
 
