@@ -65,7 +65,7 @@ Elle permet :
 
 ### 🔑 Mot de passe oublié
 <p align="center">
-  <img src="screenshots/pic3.jpg" width="650"/>
+  <img src="screenshots/pic3.jpg" width="750"/>
 </p>
 
 ---
